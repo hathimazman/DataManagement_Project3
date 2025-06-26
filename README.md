@@ -70,12 +70,3 @@ wget http://media.sundog-soft.com/hadoop/ml-100k/u.user -O /tmp/u.user
 wget http://media.sundog-soft.com/hadoop/ml-100k/u.data -O /tmp/u.data
 wget http://media.sundog-soft.com/hadoop/ml-100k/u.item -O /tmp/u.item
 ```
-
-### Example Spark SQL queries:
-
-To calculate the average rating for each movie:
-```sql
-SELECT movieID, AVG(rating) as average_rating
-FROM ratings
-GROUP BY movieID
-ORDER BY average_rating DESC;
